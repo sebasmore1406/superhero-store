@@ -6,52 +6,51 @@
 }
 
 .discount-banner {
-    background-color: #1CD1B0;
-    height: 38px;
-    padding: 10px;
-}
-
-.main {
-    align-content: center;
-    margin: 50px 0px 50px 175px;
-}
-
-.main div {
-    display: inline-block;
-    background-color: #f3f3f3;
-    background-repeat: no-repeat;
-    background-size: 300px;
-    box-shadow: 0 4px 4px black;
-    border-radius: 8px;
-    height: 529px;
-    margin: 10px;
-    padding: 20px;
-    position: relative;
-    top: 10px;
-    width: 300px;
-    z-index: 1;
+    background-color: #D1891C;
+    padding: 1vh;
 }
 
 header {
+    box-shadow: 0 1vh 5vh black;
     position: sticky;
     top: 0;
-    z-index: 2;
-    box-shadow: 0 2px 7px black;
-}
-
-footer {
-    height: 51px;
 }
 
 h1 {
-    height: 67px;
+    height: 8vh;
+    padding: 1vh;
 }
 
-footer, h1 {
+footer,
+h1 {
     background-color: #00669F;
     color: white;
-    margin: 0;
-    padding: 10px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vh;
+}
+
+.nightwing,
+.shazam,
+.luthor,
+.starfire,
+.raven,
+.quinn {
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-size: 50vh;
+    border-radius: 3vh;
+    box-shadow: 0 0 1vh black;
+    display: flex;
+    flex-flow: column wrap;
+    height: 120vh;
+    margin: 3vh 0;
+    width: 50vh;
 }
 
 .nightwing {
@@ -66,50 +65,165 @@ footer, h1 {
     background-image: url(../assets/images/Metropolis.png);
 }
 
-.profile-pic {
-    border-radius: 100%;
-    box-shadow: 0 4px 4px black;
-    left: 75px;
-    position: relative;
-    width: 120px;
-    top: 150px;
+.starfire {
+    background-image: url(../assets/images/Tamaran.png);
 }
 
-h2, .description, button {
-    margin-top: 5px;
+.raven {
+    background-image: url(../assets/images/Azarath.png);
+}
+
+.quinn {
+    background-image: url(../assets/images/Gotham.png);
+}
+
+.heart {
+    margin: 1vh 0 20vh 2vh;
+    width: 5vh;
+}
+
+.profile-pic {
+    align-self: center;
+    border-radius: 100%;
+    box-shadow: 0 1vh 1vh black;
+    width: 20vh;
 }
 
 h2 {
-    position: relative;
     text-align: center;
-    top: 150px;
+    padding-top: 1vh;
 }
 
 .description {
-    position: relative;
-    top: 150px;
     text-align: justify;
-    font-size: smaller;
-    height: 113px;
+    padding: 3vh;
 }
 
 button {
-    position: relative;
-    left: 80px;
-    top: 160px;
-    padding: 10px 25px;
+    align-self: center;
     background-color: #00669F;
+    height: 7vh;
     color: white;
+    width: 20vh;
+    margin-bottom: 3vh;
 }
 
 button:hover {
     background-color: #0071c9;
 }
 
-.heart {
-    color: #CC2424;
-    font-size: xx-large;
-    position: absolute;
-    top: 0;
-    left: 10px;
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+}
+
+.footer-text {
+    align-self: center;
+    text-align: center;
+}
+
+.footer-image {
+    width: 15vh;
+    margin-right: 3vh;
+}
+
+@media (min-width: 768px) {
+    .discount-banner {
+        background-color: #1CD1B0;
+        height: 6vh;
+        padding: 1vh;
+        width: 100%;
+    }
+
+    header {
+        box-shadow: 0 1vh 5vh black;
+        position: sticky;
+        top: 0;
+    }
+
+    h1 {
+        height: 8vh;
+    }
+
+    footer,
+    h1 {
+        background-color: #00669F;
+        color: white;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5vh;
+    }
+
+    .nightwing,
+    .shazam,
+    .luthor,
+    .starfire,
+    .raven,
+    .quinn {
+        background-size: 50vh;
+        border-radius: 3vh;
+        box-shadow: 0 0 1vh black;
+        display: flex;
+        flex-flow: column wrap;
+        height: 110vh;
+        margin: 3vh 0;
+        width: 50vh;
+    }
+
+    .heart {
+        margin: 1vh 0 20vh 2vh;
+        width: 5vh;
+    }
+
+    .profile-pic {
+        align-self: center;
+        border-radius: 100%;
+        box-shadow: 0 1vh 1vh black;
+        width: 20vh;
+    }
+
+    h2 {
+        text-align: center;
+        padding-top: 1vh;
+    }
+
+    .description {
+        text-align: justify;
+        padding: 3vh;
+    }
+
+    button {
+        align-self: center;
+        background-color: #00669F;
+        height: 7vh;
+        color: white;
+        width: 20vh;
+        margin-bottom: 3vh;
+    }
+
+    button:hover {
+        background-color: #0071c9;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1vh;
+    }
+
+    .footer-text {
+        align-self: center;
+        text-align: center;
+    }
+
+    .footer-image {
+        width: 15vh;
+        margin-right: 3vh;
+    }
 }
